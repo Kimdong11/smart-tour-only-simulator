@@ -17,7 +17,7 @@ const GET_ENTIRE_CATEGORIES = gql`
 
 const OlleTab = ({route}) => {
   const {loading, data, error} = useQuery(GET_ENTIRE_CATEGORIES);
-  return loading ? (
+  return loading || error !== undefined ? (
     <View
       style={{
         flex: 1,
