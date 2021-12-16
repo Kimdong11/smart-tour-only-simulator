@@ -38,7 +38,7 @@ const island = ({navigation: {navigate}}) => {
       <ActivityIndicator />
     </View>
   ) : (
-    <ScrollView style={{backgroundColor: '#191919'}}>
+    <ScrollView>
       <View
         style={{
           flex: 1,
